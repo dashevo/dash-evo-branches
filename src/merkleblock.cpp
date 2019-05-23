@@ -26,6 +26,11 @@ CMerkleBlock::CMerkleBlock(const CBlock& block, CBloomFilter& filter)
             TRANSACTION_PROVIDER_UPDATE_REGISTRAR,
             TRANSACTION_PROVIDER_UPDATE_REVOKE,
             TRANSACTION_COINBASE,
+            TRANSACTION_SUBTX_REGISTER,
+            TRANSACTION_SUBTX_TOPUP,
+            TRANSACTION_SUBTX_RESETKEY,
+            TRANSACTION_SUBTX_CLOSEACCOUNT,
+            TRANSACTION_SUBTX_TRANSITION,
     };
 
     for (unsigned int i = 0; i < block.vtx.size(); i++)
